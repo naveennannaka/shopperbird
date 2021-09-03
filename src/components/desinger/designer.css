@@ -1,0 +1,95 @@
+.article {
+  position: relative;
+  display: table;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #fff;
+}
+.article__inner {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  z-index: 5;
+  padding: 99px 0;
+}
+
+.text {
+  text-align: center !important;
+}
+.article-main .article__overlay-title--overlay,
+.mega-subtitle {
+  color: #000000;
+  margin-bottom: 30px;
+}
+.animations--disabled .article__overlay-title::before,
+.article__overlay-title.has-animated::before,
+.supports-no-js .article__overlay-title::before {
+  width: 200px;
+}
+.article__overlay-title::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 21px;
+  margin-bottom: 20px;
+  background-color: #000;
+  transition: width 0.5s ease-out;
+  margin: 0 auto 20px;
+}
+.article-subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+}
+@media only screen and (min-width: 750px) {
+  .article-subtitle {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+}
+p {
+  margin: 0 0 20px;
+  font-family: "Alegreya", serif;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  border: 2px solid #000;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-decoration: none;
+  text-align: center;
+  padding: 0px 30px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: outline 0.1s linear;
+  box-sizing: border-box;
+  margin-top: -35px;
+}
+
+.h2,
+h2 {
+  /* letter-spacing: inherit;
+  text-transform: inherit; */
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+}
+@media only screen and (min-width: 750px) {
+  .h2,
+  h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+}
+body,
+button {
+  font-family: "Alegreya", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #000;
+  line-height: 1.625;
+}
